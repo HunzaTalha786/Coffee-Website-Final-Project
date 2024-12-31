@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <div class="Container">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;  font-size: 23px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#gallary">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#blog">Blogs</a>
+                        </li>
+                    </ul>
+                    <!-- Search form in Navbar -->
+                    <form class="d-flex" id="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="search-bar">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <!-- Cart -->
+                    <div class="cart-icon">
+                        <a href="cartPage.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <div class="cartPage">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <p id="total-price"></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="fContent">
+            <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
+            <div class="social-links mt-4 ">
+                <div>
+                    <a href="https://www.linkedin.com/in/alishba-fahim18/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Alishba Fahim</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/hina-fahim-021515313/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Hina Fahim</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/ramla-eman/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Ramla Eman</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/hunza-talha-khan-1b8573311/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Hunza Talha Khan</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/muhammad-ehsan-11582a24b/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Muhammad Ehsan</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="credite text-center py-3">
+            Coding By <a href="#"> Samz Web Dev ( Batch 4) (Group 3)</a>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

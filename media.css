@@ -1,0 +1,40 @@
+
+ @media only screen and (max-width:1200px){
+    .social-links{
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+        
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .social-links{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        gap:5px;
+        text-align : center;
+    }
+    .social-links i{
+        padding:5px;
+    }
+    .fContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+
+    }
+    
+    
+    .footer-logo{
+        
+        
+        width: 50%;
+
+    }
+    
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="Container">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;  font-size: 23px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#gallary">Gallary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#blog">Blogs</a>
+                        </li>
+                    </ul>
+                    <!-- Search form in Navbar -->
+                    <form class="d-flex" id="search-form">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="search-bar">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <!-- Cart -->
+                    <div class="cart-icon">
+                        <a href="cartPage.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <div class="product-page">
+        <img class="product-image" src="" alt="Product Image">
+        <h1 class="product-name"></h1>
+        <p class="product-price"></p>
+        <p class="product-description"></p>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="fContent">
+            <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
+            <div class="social-links mt-4 ">
+                <div>
+                    <a href="https://www.linkedin.com/in/alishba-fahim18/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Alishba Fahim</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/hina-fahim-021515313/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Hina Fahim</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/ramla-eman/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Ramla Eman</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/hunza-talha-khan-1b8573311/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Hunza Talha Khan</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/muhammad-ehsan-11582a24b/" target="_blank">
+                        <i class="fa-brands fa-linkedin "></i> <span>Muhammad Ehsan</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="credite text-center py-3">
+            Coding By <a href="#"> Samz Web Dev ( Batch 4) (Group 3)</a>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script>
+        const products = [
+            { id: "1", name: "Mocha Latte Coffee", price: 99, description: "A smooth blend of mocha and latte, perfect for chocolate lovers.", image: "./images/m1.png" },
+            { id: "2", name: "Dry Cappuccino Coffee", price: 90, description: "A bold, rich cappuccino with minimal milk for a stronger taste.", image: "./images/m2.png" },
+            { id: "3", name: "Caffe Letta Cortado", price: 100, description: "A balanced espresso and milk drink for a creamy texture.", image: "./images/m3.png" },
+            { id: "4", name: "Cinnamon Splinkle Coffee", price: 120, description: "Coffee infused with a hint of cinnamon for a warm, spicy flavor.", image: "./images/m4.png" },
+            { id: "5", name: "Arabic Coffee", price: 200, description: "Authentic Arabic coffee with aromatic cardamom flavor.", image: "./images/m5.png" },
+            { id: "6", name: "Caffe Americano", price: 30, description: "A classic Americano with rich espresso and hot water.", image: "./images/m6.png" },
+            { id: "7", name: "Caffe Letta", price: 100, description: "A smooth coffee drink with a perfect milk-to-coffee ratio.", image: "./images/m7.png" },
+            { id: "8", name: "Black Coffee", price: 120, description: "Strong and bold black coffee for true coffee lovers.", image: "./images/m8.png" },
+            { id: "9", name: "Arabic Coffee", price: 120, description: "Traditional Arabic coffee with a rich, cultural taste.", image: "./images/arabica coffee.png" },
+            { id: "10", name: "Cappuccino Coffee", price: 250, description: "A creamy cappuccino topped with frothy milk foam.", image: "./images/Cappuccino coffee.png" },
+            { id: "11", name: "Black Coffee", price: 130, description: "Pure and simple black coffee with robust flavors.", image: "./images/Black Coffee.png" },
+            { id: "12", name: "Decaf Coffee", price: 120, description: "Decaffeinated coffee with all the flavor, minus the buzz.", image: "./images/Decaf caffee.png" },
+            { id: "13", name: "Espresso", price: 140, description: "A strong shot of espresso for an instant energy boost.", image: "./images/Espresso coffee.png" },
+            { id: "14", name: "Coffee with Milk", price: 150, description: "A comforting blend of coffee and creamy milk.", image: "./images/coffee with milk.webp" },
+            { id: "15", name: "Mocha Coffee", price: 160, description: "Decadent mocha coffee with a hint of chocolate.", image: "./images/mocha coffee.webp" },
+            { id: "16", name: "Flat White", price: 130, description: "A smooth and velvety coffee with steamed milk.", image: "./images/flat white.png" },
+            { id: "17", name: "Iced Coffee", price: 110, description: "Chilled coffee for a refreshing pick-me-up on warm days.", image: "./images/iced coffe packet.webp" },
+            { id: "18", name: "Latte Coffee", price: 180, description: "Classic latte with a rich espresso base and steamed milk.", image: "./images/coffee with milk.webp" },
+            { id: "19", name: "Irish Coffee", price: 170, description: "A delightful blend of coffee, cream, and Irish whiskey.", image: "./images/irish coffee 2.webp" },
+            { id: "20", name: "Hazelnut Coffee", price: 190, description: "Rich coffee infused with the sweet aroma of hazelnuts.", image: "./images/hazelnut coffee.webp" }
+        ];
+
+
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get('id');
+        const product = products.find(p => p.id === productId);
+
+        if (product) {
+            document.querySelector('.product-name').textContent = product.name;
+            document.querySelector('.product-price').textContent = `$${product.price}`;
+            document.querySelector('.product-description').textContent = product.description;
+            document.querySelector('.product-image').src = product.image;
+
+            const cartButton = document.createElement('button');
+            cartButton.textContent = "Add to Cart";
+            cartButton.classList.add('add-to-cart-btn');
+            cartButton.onclick = () => addToCart(product);
+            document.querySelector('.product-page').appendChild(cartButton);
+        } else {
+            document.body.innerHTML = "<h1>Product not found</h1>";
+        }
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingProductIndex = cart.findIndex(item => item.id === product.id);
+
+            if (existingProductIndex >= 0) {
+                // SweetAlert for already added product
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Oops...',
+                    text: 'This product is already in the cart!',
+                });
+            } else {
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                // SweetAlert for successfully added product
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Added to Cart!',
+                    text: `${product.name} has been added to your cart.`,
+                });
+            }
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+
+</html>
